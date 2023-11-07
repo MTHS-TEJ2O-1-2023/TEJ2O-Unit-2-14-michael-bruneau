@@ -6,6 +6,7 @@
 */
 
 // variables
+let sprite: game.LedSprite = null
 let xAxis: number = 0
 let yAxis: number = 0
 
@@ -18,11 +19,13 @@ input.onButtonPressed(Button.A, function () {
   basic.clearScreen()
   xAxis = 0
   yAxis = 0
+  sprite = game.createSprite(xAxis, yAxis)
 
   while (xAxis <= 4)
     basic.pause(500)
 
-    game.createSprite(xAxis, yAxis)
+    sprite.set(LedSpriteProperty.X, xAxis)
+    sprite.set(LedSpriteProperty.Y, yAxis)
 
     xAxis = xAxis + 1
     yAxis = yAxis + 1
