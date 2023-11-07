@@ -13,3 +13,17 @@ let yAxis: number = 0
 basic.showIcon(IconNames.Happy)
 basic.pause(500)
 basic.clearScreen()
+
+input.onButtonPressed(Button.A, function () {
+  basic.clearScreen()
+  xAxis = 0
+  yAxis = 0
+
+  while (xAxis <= 4)
+    basic.pause(500)
+
+    game.createSprite(xAxis, yAxis)
+
+    xAxis = xAxis + 1
+    yAxis = yAxis + 1
+})
