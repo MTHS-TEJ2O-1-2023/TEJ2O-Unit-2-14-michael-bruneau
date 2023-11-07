@@ -1,8 +1,11 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: Mr. Coxall
- * Created on: Sep 2020
- * This program ...
+ * Created by: Michael Bruneau
+ * Created on: Nov 2023
+ * This program does shows diagnals on microbit 
 */
 
-basic.showString('Hello, World!')
+// setup
+basic.showIcon(IconNames.Happy)
+basic.pause(500)
+basic.clearScreen()
