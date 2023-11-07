@@ -32,7 +32,7 @@ input.onButtonPressed(Button.A, function () {
   }
 
   basic.pause(500)
-  basic.clearScreen()
+  sprite.delete()
 })
 
 input.onButtonPressed(Button.B, function () {
@@ -52,5 +52,5 @@ input.onButtonPressed(Button.B, function () {
   }
 
   basic.pause(500)
-  basic.clearScreen()
+  sprite.delete()
 })
