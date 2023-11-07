@@ -25,7 +25,7 @@ while True:
         while x_axis <= 4:
             sleep(500)
 
-            display.set_pixel(x_axis,y_axis,9)
+            display.set_pixel(x_axis, y_axis, 9)
 
             x_axis = x_axis + 1
             y_axis = y_axis + 1
