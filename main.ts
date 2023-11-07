@@ -43,6 +43,7 @@ input.onButtonPressed(Button.B, function () {
 
   while (xAxis <= 4 || yAxis >= 0) {
     basic.pause(500)
+    basic.clearScreen()
 
     sprite.set(LedSpriteProperty.X, xAxis)
     sprite.set(LedSpriteProperty.Y, yAxis)
