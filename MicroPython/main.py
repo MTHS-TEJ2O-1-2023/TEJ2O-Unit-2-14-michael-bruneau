@@ -24,8 +24,24 @@ while True:
 
         while x_axis <= 4:
             sleep(500)
+            display.clear()
 
             display.set_pixel(x_axis, y_axis, 9)
 
             x_axis = x_axis + 1
             y_axis = y_axis + 1
+
+    if button_b.is_pressed():
+        display.clear()
+
+        x_axis = 0
+        y_axis = 4
+
+        while x_axis <= 4:
+            sleep(500)
+            display.clear()
+
+            display.set_pixel(x_axis, y_axis, 9)
+
+            x_axis = x_axis + 1
+            y_axis = y_axis - 1
