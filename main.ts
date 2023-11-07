@@ -30,6 +30,9 @@ input.onButtonPressed(Button.A, function () {
     xAxis = xAxis + 1
     yAxis = yAxis + 1
   }
+
+  basic.pause(500)
+  basic.clearScreen()
 })
 
 input.onButtonPressed(Button.B, function () {
@@ -38,7 +41,7 @@ input.onButtonPressed(Button.B, function () {
   yAxis = 4
   sprite = game.createSprite(xAxis, yAxis)
 
-  while (xAxis <= 4) {
+  while (xAxis <= 4 || yAxis >= 0) {
     basic.pause(500)
 
     sprite.set(LedSpriteProperty.X, xAxis)
@@ -46,7 +49,8 @@ input.onButtonPressed(Button.B, function () {
 
     xAxis = xAxis + 1
     yAxis = yAxis - 1
-    }
+  }
+
   basic.pause(500)
   basic.clearScreen()
 })
