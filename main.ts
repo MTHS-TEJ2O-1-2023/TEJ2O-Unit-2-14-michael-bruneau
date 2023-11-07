@@ -2,7 +2,7 @@
  *
  * Created by: Michael Bruneau
  * Created on: Nov 2023
- * This program does shows diagnals on microbit 
+ * This program does shows diagnals on microbit
 */
 
 // variables
