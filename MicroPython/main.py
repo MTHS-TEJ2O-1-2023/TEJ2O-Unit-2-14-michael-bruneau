@@ -31,6 +31,9 @@ while True:
             x_axis = x_axis + 1
             y_axis = y_axis + 1
 
+        sleep(500)
+        display.clear()
+
     if button_b.is_pressed():
         display.clear()
 
