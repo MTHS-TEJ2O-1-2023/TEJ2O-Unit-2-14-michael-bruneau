@@ -17,13 +17,17 @@ basic.clearScreen()
 
 input.onButtonPressed(Button.A, function () {
   basic.clearScreen()
+
+  // set x and y axis to 0
   xAxis = 0
   yAxis = 0
   sprite = game.createSprite(xAxis, yAxis)
 
+  // loop until x axis is greater than 4
   while (xAxis <= 4) {
     basic.pause(500)
 
+    // make pixels light up diagnally
     sprite.set(LedSpriteProperty.X, xAxis)
     sprite.set(LedSpriteProperty.Y, yAxis)
 
@@ -37,14 +41,18 @@ input.onButtonPressed(Button.A, function () {
 
 input.onButtonPressed(Button.B, function () {
   basic.clearScreen()
+
+  // set x axis to 0 and y axis to 4
   xAxis = 0
   yAxis = 4
   sprite = game.createSprite(xAxis, yAxis)
 
+  // loop until x axis is greater than 4
   while (xAxis <= 4 || yAxis >= 0) {
     basic.pause(500)
     basic.clearScreen()
 
+    // make pixels light up diagnally
     sprite.set(LedSpriteProperty.X, xAxis)
     sprite.set(LedSpriteProperty.Y, yAxis)
 
